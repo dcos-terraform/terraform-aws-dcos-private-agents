@@ -35,7 +35,7 @@ module "dcos-private-agent-instances" {
   cluster_name                = "${var.cluster_name}"
   hostname_format             = "${var.hostname_format}"
   num                         = "${var.num_private_agents}"
-  ami                = "${var.aws_ami}"
+  ami                         = "${var.aws_ami}"
   user_data                   = "${var.user_data}"
   instance_type               = "${var.aws_instance_type}"
   subnet_ids                  = ["${var.aws_subnet_ids}"]
