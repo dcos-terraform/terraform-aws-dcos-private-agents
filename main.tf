@@ -32,6 +32,7 @@ module "dcos-private-agent-instances" {
     aws = "aws"
   }
 
+  region                      = "${var.region}"
   cluster_name                = "${var.cluster_name}"
   hostname_format             = "${var.hostname_format}"
   num                         = "${var.num_private_agents}"
