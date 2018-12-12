@@ -8,7 +8,7 @@ EXAMPLE
 ```hcl
 module "dcos-private-agent-instances" {
   source  = "dcos-terraform/private-agents/aws"
-  version = "~> 0.1"
+  version = "~> 0.1.0"
 
   cluster_name = "production"
   subnet_ids = ["subnet-12345678"]
