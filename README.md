@@ -26,6 +26,7 @@ module "dcos-private-agent-instances" {
 |------|-------------|:----:|:-----:|:-----:|
 | aws_ami | AMI that will be used for the instances instead of Mesosphere provided AMIs | string | `` | no |
 | aws_associate_public_ip_address | Associate a public IP address with the instances | string | `true` | no |
+| aws_extra_volumes | Extra volumes for each instance | string | `<list>` | no |
 | aws_iam_instance_profile | Instance profile to be used for these instances | string | `` | no |
 | aws_instance_type | Instance type | string | `t2.medium` | no |
 | aws_key_name | Specify the aws ssh key to use. We assume its already loaded in your SSH agent. Set ssh_public_key_file to empty string | string | - | yes |
