@@ -26,7 +26,7 @@ provider "aws" {}
 // Instances is spawning the VMs to be used with DC/OS (bootstrap)
 module "dcos-private-agent-instances" {
   source  = "dcos-terraform/instance/aws"
-  version = "~> 0.1.0"
+  version = "~> 0.1.2"
 
   providers = {
     aws = "aws"
@@ -43,6 +43,7 @@ module "dcos-private-agent-instances" {
   key_name                    = "${var.aws_key_name}"
   root_volume_size            = "${var.aws_root_volume_size}"
   root_volume_type            = "${var.aws_root_volume_type}"
+  extra_volumes               = ["${var.aws_extra_volumes}"]
   associate_public_ip_address = "${var.aws_associate_public_ip_address}"
   tags                        = "${var.tags}"
   dcos_instance_os            = "${var.dcos_instance_os}"
