@@ -77,3 +77,8 @@ variable "num_private_agents" {
   description = "Specify the amount of private agents. These agents will provide your main resources"
   default     = "1"
 }
+
+variable "name_prefix" {
+  description = "Name Prefix"
+  default     = ""
+}
