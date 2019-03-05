@@ -9,7 +9,7 @@ variable "tags" {
 }
 
 variable "aws_ami" {
-  description = "AMI that will be used for the instances instead of Mesosphere provided AMIs"
+  description = "AMI that will be used for the instances instead of the Mesosphere chosen default images. Custom AMIs must fulfill the Mesosphere DC/OS system-requirements: See https://docs.mesosphere.com/1.12/installing/production/system-requirements/"
   default     = ""
 }
 
@@ -26,6 +26,11 @@ variable "aws_root_volume_size" {
 variable "aws_root_volume_type" {
   description = "Root volume type"
   default     = "standard"
+}
+
+variable "aws_extra_volumes" {
+  description = "Extra volumes for each instance"
+  default     = []
 }
 
 variable "aws_subnet_ids" {
