@@ -25,7 +25,7 @@ module "dcos-private-agent-instances" {
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | aws_ami | AMI that will be used for the instances instead of the Mesosphere chosen default images. Custom AMIs must fulfill the Mesosphere DC/OS system-requirements: See https://docs.mesosphere.com/1.12/installing/production/system-requirements/ | string | `` | no |
-| aws_associate_public_ip_address | Associate a public IP address with the instances | string | `true` | no |
+| aws_associate_public_ip_address | Associate a public IP address with the instances | string | `false` | no |
 | aws_extra_volumes | Extra volumes for each instance | string | `<list>` | no |
 | aws_iam_instance_profile | Instance profile to be used for these instances | string | `` | no |
 | aws_instance_type | Instance type | string | `t2.medium` | no |
