@@ -12,8 +12,8 @@
  *   version = "~> 0.1.0"
  *
  *   cluster_name = "production"
- *   subnet_ids = ["subnet-12345678"]
- *   security_group_ids = ["sg-12345678"]"
+ *   aws_subnet_ids = ["subnet-12345678"]
+ *   aws_security_group_ids = ["sg-12345678"]"
  *   aws_key_name = "my-ssh-key"
  *
  *   num_private_agents = "2"
