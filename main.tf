@@ -9,7 +9,7 @@
  *```hcl
  * module "dcos-private-agent-instances" {
  *   source  = "dcos-terraform/private-agents/aws"
- *   version = "~> 0.1.0"
+ *   version = "~> 0.2.0"
  *
  *   cluster_name = "production"
  *   aws_subnet_ids = ["subnet-12345678"]
